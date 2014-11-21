@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="container">
+    <div class="panel panel-default" style="margin-top:10px;">
+        <div class="panel-heading">
+            Login
+        </div>
+        <div class="panel-body">
+            <form role="form">
+                <div class="form-group">
+                    <label for="inputEmail">Username</label>
+                    <input type="email" class="form-control" id="username" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <label for="inputConfirmPassword">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-default" id="loginButton">Login</button>
+                <div class="form-group" style="margin-top:10px">
+                    @Html.ActionLink("Register", "Register", "Home")
+                </div>
+                <div class="form-group">
+                    <p class="text-danger" id="feedback" style="margin-top:10px;"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/login.js"></script>
+

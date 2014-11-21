@@ -1,0 +1,16 @@
+﻿<div class="jumbotron">
+    <h1>Compito Stefano Vuerich</h1>
+    <br />
+    <h2>Descrizione Progetto</h2>
+    <p>L'inserimento dei dati tramite la webapi sposta i dati in una queue.</p>
+    <p align="justify">
+        Il queue worker analizza questa queue alla ricerca di entry ogni 10 secondi.
+        Nel caso in cui trovi un record nella queue logga l'avvenuta ricerca positiva sulla console e
+        effettua subito un altra ricerca, nel caso in cui a questo punto non trovi nulla sirimette ad aspettare per 10 secondi.
+    </p>
+    <p>Il queue worker quando  trova una entry la inserisce al'interno della table storage.</p>
+    <p>
+        Per quanto riguarda le operazioni di get/getall e delete le webapi comunicano
+        direttamente con il table storage repository
+    </p>
+</div>

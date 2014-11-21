@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StefanoVuerich.TestFinale.Models", "StefanoVuerich.TestFinale.Models\StefanoVuerich.TestFinale.Models.csproj", "{9C4AD3FA-C4AE-401B-BE36-74C3C5B34940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StefanoVuerich.TestFinale.Portal", "StefanoVuerich.TestFinale.Portal\StefanoVuerich.TestFinale.Portal.csproj", "{D95AA8EC-2538-4885-A616-0415ADB30ACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StefanoVuerich.TestFinale.Contracts", "StefanoVuerich.TestFinale.Contracts\StefanoVuerich.TestFinale.Contracts.csproj", "{5C28E59D-0DAC-4CDF-82B9-96EEACCF1F86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StefanoVuerich.TestFinale.Queues", "StefanoVuerich.TestFinale.Queues\StefanoVuerich.TestFinale.Queues.csproj", "{7B27A4B0-00F6-495B-98A2-119E7D6F3417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StefanoVuerich.TestFinale.AzureRepositories", "StefanoVuerich.TestFinale.AzureRepositories\StefanoVuerich.TestFinale.AzureRepositories.csproj", "{2298C08F-C9CF-48BB-ADC6-D98D3A272FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StefanoVuerich.TestFinale.QueueWorker", "StefanoVuerich.TestFinale.QueueWorker\StefanoVuerich.TestFinale.QueueWorker.csproj", "{1101F58C-7FE6-45EE-981B-C287D003B3C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C4AD3FA-C4AE-401B-BE36-74C3C5B34940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4AD3FA-C4AE-401B-BE36-74C3C5B34940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4AD3FA-C4AE-401B-BE36-74C3C5B34940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4AD3FA-C4AE-401B-BE36-74C3C5B34940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95AA8EC-2538-4885-A616-0415ADB30ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95AA8EC-2538-4885-A616-0415ADB30ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95AA8EC-2538-4885-A616-0415ADB30ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95AA8EC-2538-4885-A616-0415ADB30ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C28E59D-0DAC-4CDF-82B9-96EEACCF1F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C28E59D-0DAC-4CDF-82B9-96EEACCF1F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C28E59D-0DAC-4CDF-82B9-96EEACCF1F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C28E59D-0DAC-4CDF-82B9-96EEACCF1F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B27A4B0-00F6-495B-98A2-119E7D6F3417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B27A4B0-00F6-495B-98A2-119E7D6F3417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B27A4B0-00F6-495B-98A2-119E7D6F3417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B27A4B0-00F6-495B-98A2-119E7D6F3417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2298C08F-C9CF-48BB-ADC6-D98D3A272FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2298C08F-C9CF-48BB-ADC6-D98D3A272FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2298C08F-C9CF-48BB-ADC6-D98D3A272FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2298C08F-C9CF-48BB-ADC6-D98D3A272FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1101F58C-7FE6-45EE-981B-C287D003B3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1101F58C-7FE6-45EE-981B-C287D003B3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1101F58C-7FE6-45EE-981B-C287D003B3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1101F58C-7FE6-45EE-981B-C287D003B3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

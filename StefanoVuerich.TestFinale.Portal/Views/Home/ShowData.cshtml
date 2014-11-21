@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "ShowData";
+}
+
+<div class="container" style="min-width: 500px">
+    <div class="panel panel-default" style="margin-top:10px; min-width:500px">
+        <div class="panel-heading" id="welcomeMessage"></div>
+        <div class="panel-body">
+            <ul class="nav nav-tabs" role="tablist" id="myTab" style="min-width: 470px">
+                <li role="presentation" class="active" id="allRecordsTab"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Visualizza records</a></li>
+                <li role="presentation" id="insertRecordTab"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Inserisci record</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Dettaglio record</a></li>
+            </ul>
+            <div class="tab-content" style="min-width: 470px">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <table class="table table-hover" style="min-width:470px">
+                        <thead style="min-width: 470px">
+                            <tr style="min-width: 470px">
+                                <th>ID</th>
+                                <th>Titolo</th>
+                                <th>Description</th>
+                                <th>Data Creazione</th>
+                                <th>Durata</th>
+                                <th>Category ID</th>
+                                <th>Category Description</th>
+                            </tr>
+                        </thead>
+                        <tbody style="min-width: 470px" id="tableBody">
+                            @*records inseriti dalla chiamata ajax*@
+                        </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <form role="form" style="margin-top:10px" id="insertForm">
+                        <div class="form-group">
+                            <label for="Titolo">Titolo</label>
+                            <input type="text" class="form-control" id="titolo" placeholder="Titolo">
+                        </div>
+                        <div class="form-group">
+                            <label for="Descrizione">Descrizione</label>
+                            <input type="text" class="form-control" id="descrizione" placeholder="Descrizione">
+                        </div>
+                        <div class="form-group">
+                            <label for="Durata">Durata</label>
+                            <input type="text" class="form-control" id="durata" placeholder="Durata">
+                        </div>
+                        <div class="form-group">
+                            <label for="CategoryID">Category ID</label>
+                            <input type="text" class="form-control" id="categoryID" placeholder="Category ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="CategoryDescription">Category Description</label>
+                            <input type="text" class="form-control" id="categoryDescription" placeholder="Category Description">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="insertRecord">Insert Activity</button>
+                        <div class="form-group">
+                            <p class="text-danger" id="inserFeedback" style="margin-top:10px;"></p>
+                        </div>
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <form role="form" style="margin-top:10px">
+                        <div class="form-group">
+                            <label for="recordID">Titolo Activity </label>
+                            <input type="text" class="form-control" id="findActivityID" placeholder="Record ID">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="findRecordByIDBtn">Find Activity</button>
+                        <div class="form-group">
+                            <p class="text-danger" id="findByIDFeedback" style="margin-top:10px;"></p>
+                        </div>
+                    </form>
+                    <table class="table table-hover" style="min-width:470px; margin-top:10px">
+                        <thead style="min-width: 470px">
+                            <tr style="min-width: 470px">
+                                <th>ID</th>
+                                <th>Titolo</th>
+                                <th>Description</th>
+                                <th>Data Creazione</th>
+                                <th>Durata</th>
+                                <th>Category ID</th>
+                                <th>Category Description</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody style="min-width: 470px" id="singleEntityTableBody">
+                            @*records inseriti dalla chiamata ajax*@
+                        </tbody>
+                    </table>
+                    <div>
+                        <p class="text-danger" id="hasBeenRemovedFeedback" style="margin-top:10px;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/logged.js"></script>
+
+

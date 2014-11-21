@@ -1,0 +1,5 @@
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Contracts\bin\Debug\StefanoVuerich.TestFinale.Contracts.dll
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Contracts\bin\Debug\StefanoVuerich.TestFinale.Contracts.pdb
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Contracts\obj\Debug\StefanoVuerich.TestFinale.Contracts.csprojResolveAssemblyReference.cache
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Contracts\obj\Debug\StefanoVuerich.TestFinale.Contracts.dll
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Contracts\obj\Debug\StefanoVuerich.TestFinale.Contracts.pdb

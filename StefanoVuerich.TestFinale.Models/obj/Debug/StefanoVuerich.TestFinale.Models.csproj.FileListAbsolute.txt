@@ -1,0 +1,5 @@
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Models\bin\Debug\StefanoVuerich.TestFinale.Models.dll
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Models\bin\Debug\StefanoVuerich.TestFinale.Models.pdb
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.csprojResolveAssemblyReference.cache
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.dll
+c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.pdb
