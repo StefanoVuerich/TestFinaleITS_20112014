@@ -61,3 +61,6 @@ c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFina
 c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.QueueWorker\obj\Debug\StefanoVuerich.TestFinale.QueueWorker.csprojResolveAssemblyReference.cache
 c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.QueueWorker\obj\Debug\StefanoVuerich.TestFinale.QueueWorker.exe
 c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.QueueWorker\obj\Debug\StefanoVuerich.TestFinale.QueueWorker.pdb
+D:\GITREPOSITORIES\TestFinaleITS_20112014\StefanoVuerich.TestFinale.QueueWorker\bin\Debug\StefanoVuerich.TestFinale.QueueWorker.exe.config
+D:\GITREPOSITORIES\TestFinaleITS_20112014\StefanoVuerich.TestFinale.QueueWorker\obj\Debug\StefanoVuerich.TestFinale.QueueWorker.exe
+D:\GITREPOSITORIES\TestFinaleITS_20112014\StefanoVuerich.TestFinale.QueueWorker\obj\Debug\StefanoVuerich.TestFinale.QueueWorker.pdb

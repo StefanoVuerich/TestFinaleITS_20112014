@@ -60,16 +60,22 @@ function RicercaDati() {
             for (var x in data) {
 
                 var row = '<tr><td>'
-                        + data[x].ID + '</td><td>'
+                        + data[x].ID + '</td><td  class="titolo" >'
                         + data[x].Titolo + '</td><td>'
                         + data[x].Descrizione + '</td><td>'
                         + data[x].CreationDate + '</td><td>'
                         + data[x].Duration + '</td><td>'
                         + data[x].CategoryID + '</td><td>'
-                        + data[x].CategoryDescription + '</td></tr>';
+                        + data[x].CategoryDescription + '</td><td>'
+                        + '<span class="glyphicon glyphicon-trash cancelFromList" style="cursor:pointer" aria-hidden="true"></span><td><tr>';
 
-                $('#tableBody').append(row);
+                $('#tableBody').append(row)
             }
+            $('.cancelFromList').on('click', function () {
+                var obj = $(this)
+                var objName = obj.parent().siblings('.titolo').html()
+                var x = CancellaActitity(objName, obj)
+            })
         },
         error: function (xhr) {
 
@@ -115,14 +121,14 @@ function SearchByID(id) {
                         + data.Duration + '</td><td>'
                         + data.CategoryID + '</td><td>'
                         + data.CategoryDescription + '</td><td>'
-                        + '<span class="glyphicon glyphicon-trash" id="cancelActivity" aria-hidden="true"></span></td></tr>';
+                        + '<span class="glyphicon glyphicon-trash" id="cancelActivity" style="cursor:pointer" aria-hidden="true"></span></td></tr>';
 
                 $('#singleEntityTableBody').append(entity);
 
                 $('#cancelActivity').on('click', function (e) {
                     e.preventDefault()
                     var activityToCancel = $('#activityName').text()
-                    CancellaActitity(activityToCancel)
+                    CancellaActitity(activityToCancel, null)
                 })
             } else
                 $('#findByIDFeedback').html("Nessun record trovato")
@@ -133,7 +139,7 @@ function SearchByID(id) {
     });
 }
 
-function CancellaActitity(name) {
+function CancellaActitity(name, callingObj) {
     var retVal = confirm("Vuoi veramente cancellare questa activity ?");
     if (retVal == true) {
         $.ajax({
@@ -141,17 +147,23 @@ function CancellaActitity(name) {
             url: '../api/activities/' + name,
             beforeSend: function (xhr) { xhr.setRequestHeader('Authorization', 'Bearer ' + sessionStorage.getItem('token')) },
             success: function (data) {
-                $('#currentRow').remove()
-                $('#hasBeenRemovedFeedback').html("Dato rimosso correttamente")
-                setTimeout(function () {
-                    $('#hasBeenRemovedFeedback').fadeOut(1000, function () {
-                        $('#hasBeenRemovedFeedback').html('');
-                    });
-                }, 500);
+                if (callingObj != null) {
+                    callingObj.parent().parent('tr').remove();
+                } else {
+                    $('#currentRow').remove()
+                    $('#hasBeenRemovedFeedback').html("Dato rimosso correttamente")
+                    setTimeout(function () {
+                        $('#hasBeenRemovedFeedback').fadeOut(1000, function () {
+                            $('#hasBeenRemovedFeedback').html('');
+                        });
+                    }, 500);
+                    return true;
+                }
             },
             error: function (xhr) {
                 $('#hasBeenRemovedFeedback').html("Errore nella cancellazione")
                 setTimeout(function () { $('#hasBeenRemovedFeedback').html('') }, 2500);
+                return false;
             }
         });
     } else {
