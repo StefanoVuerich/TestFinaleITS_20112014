@@ -14,6 +14,7 @@
     }
    
     RicercaDati();
+
     $('#allRecordsTab').click(function (e) {
         e.preventDefault()
         $('#tableBody').empty()
@@ -33,8 +34,8 @@
         objToSend.titolo = $('#titolo').val()
         objToSend.descrizione = $('#descrizione').val()
         objToSend.duration = parseInt($('#durata').val())
-        objToSend.categoryID = parseInt($('#categoryID').val())
-        objToSend.categoryDescription = $('#categoryDescription').val()
+        //objToSend.categoryID = parseInt($('#categoryID').val())
+        objToSend.categoryDescription = $("#selectCategory option:selected").text()
         Insert(objToSend)
     })
 

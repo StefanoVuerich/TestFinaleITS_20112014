@@ -3,3 +3,8 @@ c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFina
 c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.csprojResolveAssemblyReference.cache
 c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.dll
 c:\users\vuric_000\documents\visual studio 2013\Projects\StefanoVuerich.TestFinale\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.pdb
+D:\GITREPOSITORIES\TestFinaleITS_20112014\StefanoVuerich.TestFinale.Models\bin\Debug\StefanoVuerich.TestFinale.Models.dll
+D:\GITREPOSITORIES\TestFinaleITS_20112014\StefanoVuerich.TestFinale.Models\bin\Debug\StefanoVuerich.TestFinale.Models.pdb
+D:\GITREPOSITORIES\TestFinaleITS_20112014\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.dll
+D:\GITREPOSITORIES\TestFinaleITS_20112014\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.pdb
+D:\GITREPOSITORIES\TestFinaleITS_20112014\StefanoVuerich.TestFinale.Models\obj\Debug\StefanoVuerich.TestFinale.Models.csprojResolveAssemblyReference.cache

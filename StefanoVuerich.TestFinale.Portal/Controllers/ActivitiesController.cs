@@ -31,7 +31,14 @@ namespace StefanoVuerich.TestFinale.Portal.Controllers
         [HttpPost]
         public void Insert(ActivityInsertDTO activity)
         {
-            Activity entity = new Activity(activity.Titolo, activity.Descrizione, activity.Duration, activity.CategoryID, activity.CategoryDescription);
+            Dictionary<string, int> categorie = new Dictionary<string, int>();
+            categorie.Add("Sport",1);
+            categorie.Add("Divertimento",2);
+            categorie.Add("Spettacolo",3);
+            categorie.Add("Scienze",4);
+            var catID = categorie.Where(xx => xx.Key == activity.CategoryDescription).FirstOrDefault().Value;
+            
+            Activity entity = new Activity(activity.Titolo, activity.Descrizione, activity.Duration, catID, activity.CategoryDescription);
 
             _queue = new MyQueue();
             _queue.SendToQueue(entity);
